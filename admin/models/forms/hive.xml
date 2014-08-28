@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields>
+		<fieldset>
+			<field
+					name="name"
+					type="text"
+					default=""
+					label="COM_REGISTRATION_STARTDATE_LABEL"
+					description="COM_REGISTRATION_STARTDATE_DESC" />
+			<field
+					name="type"
+					type="list"
+					label="COM_REGISTRATION_ENDDATE_LABEL"
+					description="COM_REGISTRATION_ENDATE_DESC">
+				<option value="langstroth">COM_HIVEMANAGER_LANGSTROTH</option>
+				<option value="nuc">COM_HIVEMANAGER_NUC</option>
+				<option value="top-bar">COM_HIVEMANAGER_TOP_BAR</option>
+				<option value="warre">COM_HIVEMANAGER_WARRE</option>
+			</field>
+			<field
+					name="lat"
+					type="text"
+					default=""
+					label="COM_REGISTRATION_STARTDATE_LABEL"
+					description="COM_REGISTRATION_STARTDATE_DESC" />
+			<field
+					name="lng"
+					type="text"
+					default=""
+					label="COM_REGISTRATION_STARTDATE_LABEL"
+					description="COM_REGISTRATION_STARTDATE_DESC" />
+			<field
+					name="started"
+					type="calendar"
+					default="NOW"
+					label="COM_REGISTRATION_STARTDATE_LABEL"
+					description="COM_REGISTRATION_STARTDATE_DESC" />
+		</fieldset>
+	</fields>
+</form>
