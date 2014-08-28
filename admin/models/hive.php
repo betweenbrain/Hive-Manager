@@ -79,8 +79,16 @@ class HivemanagerModelHive extends JModelForm
 	 */
 	public function save($data)
 	{
-		$row = $this->getTable();
-		$row->store($data);
+		$table = $this->getTable();
+
+		if ($table->save($data) === true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 }
