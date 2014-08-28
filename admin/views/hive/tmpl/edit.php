@@ -18,8 +18,6 @@
 	<?php endforeach; ?>
 	<input type="hidden" name="option" value="com_hivemanager" />
 	<input type="hidden" name="task" value="hive.save" />
-	<input type="hidden" name="view" value="hive" />
-	<input type="hidden" name="layout" value="edit" />
 	<input type="submit">
 	<?php echo JHtml::_('form.token'); ?>
 </form>
