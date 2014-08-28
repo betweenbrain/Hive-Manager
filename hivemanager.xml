@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="component" method="upgrade">
+	<author>Matt Thomas</author>
+	<authorEmail>matt@betweenbrain.com</authorEmail>
+	<authorUrl>http://betweenbrain.com</authorUrl>
+	<copyright>(C) 2014 betweenbrain llc. All rights reserved.</copyright>
+	<creationDate>August 28, 2014</creationDate>
+	<description>COM_HIVEMANAGER_DESC</description>
+	<license>GNU/GPL v2 or later</license>
+	<name>com_hivemanager</name>
+	<version>0.0.1</version>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<menu>COM_HIVEMANAGER_ADMIN_MENU</menu>
+
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>controller.php</filename>
+			<filename>hivemanager.php</filename>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_hivemanager.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_hivemanager.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>
