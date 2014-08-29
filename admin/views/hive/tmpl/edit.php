@@ -9,15 +9,20 @@
  * License    GNU GPL v2 or later
  */
 ?>
-<form method="post" action="index.php">
-	<?php foreach ($this->form->getFieldset() as $field): ?>
-		<div class="control-group">
-			<div class="control-label"><?php echo $field->label; ?></div>
-			<div class="controls"><?php echo $field->input; ?></div>
-		</div>
-	<?php endforeach; ?>
-	<input type="hidden" name="option" value="com_hivemanager" />
-	<input type="hidden" name="task" value="hive.save" />
-	<input type="submit">
-	<?php echo JHtml::_('form.token'); ?>
+<form action="<?php echo JRoute::_('index.php?option=com_hivemanager&layout=edit'); ?>" method="post" name="adminForm" id="hive-form" class="form-validate">
+	<div class="form-horizontal">
+		<?php foreach ($this->form->getFieldset() as $field): ?>
+			<div class="row-fluid">
+				<div class="span1">
+					<?php echo $field->label; ?>
+				</div>
+				<div class="span11">
+					<?php echo $field->input; ?>
+				</div>
+			</div>
+		<?php endforeach; ?>
+		<input type="hidden" name="task" value="hive.save" />
+		<input type="submit">
+		<?php echo JHtml::_('form.token'); ?>
+	</div>
 </form>
