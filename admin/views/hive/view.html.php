@@ -28,7 +28,26 @@ class HivemanagerViewHive extends JViewLegacy
 	{
 
 		$this->form = $this->get('Form');
+		$this->addToolbar();
 
 		parent::display($tpl);
+	}
+
+	/**
+	 * Add the page title and toolbar.
+	 *
+	 * @return  void
+	 *
+	 * @since   1.6
+	 */
+	protected function addToolbar()
+	{
+		JFactory::getApplication()->input->set('hidemainmenu', true);
+
+		JToolbarHelper::title(JText::_('COM_HIVEMANAGER_NEW_HIVE'));
+
+		JToolbarHelper::save('hive.save');
+
+		JToolbarHelper::cancel('hive.cancel');
 	}
 }
