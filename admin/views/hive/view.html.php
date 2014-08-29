@@ -44,7 +44,7 @@ class HivemanagerViewHive extends JViewLegacy
 	{
 		JFactory::getApplication()->input->set('hidemainmenu', true);
 
-		JToolbarHelper::title(JText::_('COM_HIVEMANAGER_NEW_HIVE'));
+		JToolbarHelper::title(JText::_('COM_HIVEMANAGER') . ': <em>' . JText::_('COM_HIVEMANAGER_NEW_HIVE') . '</em>');
 
 		JToolbarHelper::save('hive.save');
 
