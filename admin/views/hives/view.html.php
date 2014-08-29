@@ -47,5 +47,6 @@ class HivemanagerViewHives extends JViewLegacy
 		JToolbarHelper::title(JText::_('COM_HIVEMANAGER') . ': <em>' . JText::_('COM_HIVEMANAGER_HIVES') . '</em>');
 
 		JToolbarHelper::addNew('hive.add');
+		JToolbarHelper::editList('hive.edit');
 	}
 }
