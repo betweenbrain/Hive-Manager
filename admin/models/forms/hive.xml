@@ -6,13 +6,13 @@
 					name="name"
 					type="text"
 					default=""
-					label="COM_REGISTRATION_STARTDATE_LABEL"
-					description="COM_REGISTRATION_STARTDATE_DESC" />
+					label="COM_HIVEMANAGER_NAME_LABEL"
+					description="COM_HIVEMANAGER_NAME_DESC" />
 			<field
 					name="type"
 					type="list"
-					label="COM_REGISTRATION_ENDDATE_LABEL"
-					description="COM_REGISTRATION_ENDATE_DESC">
+					label="COM_HIVEMANAGER_TYPE_LABEL"
+					description="COM_HIVEMANAGER_TYPE_DESC">
 				<option value="langstroth">COM_HIVEMANAGER_LANGSTROTH</option>
 				<option value="nuc">COM_HIVEMANAGER_NUC</option>
 				<option value="top-bar">COM_HIVEMANAGER_TOP_BAR</option>
@@ -22,20 +22,20 @@
 					name="lat"
 					type="text"
 					default=""
-					label="COM_REGISTRATION_STARTDATE_LABEL"
-					description="COM_REGISTRATION_STARTDATE_DESC" />
+					label="COM_HIVEMANAGER_LAT_LABEL"
+					description="COM_HIVEMANAGER_LAT_DESC" />
 			<field
 					name="lng"
 					type="text"
 					default=""
-					label="COM_REGISTRATION_STARTDATE_LABEL"
-					description="COM_REGISTRATION_STARTDATE_DESC" />
+					label="COM_HIVEMANAGER_LNG_LABEL"
+					description="COM_HIVEMANAGER_LNG_DESC" />
 			<field
 					name="started"
 					type="calendar"
 					default="NOW"
-					label="COM_REGISTRATION_STARTDATE_LABEL"
-					description="COM_REGISTRATION_STARTDATE_DESC" />
+					label="COM_HIVEMANAGER_STARTED_LABEL"
+					description="COM_HIVEMANAGER_STARTED_DESC" />
 		</fieldset>
 	</fields>
 </form>
