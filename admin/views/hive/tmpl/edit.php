@@ -19,18 +19,16 @@ JHtml::_('behavior.formvalidation');
 	}
 </script>
 <form action="<?php echo JRoute::_('index.php?option=com_hivemanager'); ?>" method="post" name="adminForm" id="hive-form" class="form-validate">
-	<div class="form-horizontal">
-		<?php foreach ($this->form->getFieldset() as $field): ?>
-			<div class="row-fluid">
-				<div class="span1">
+	<div class="row-fluid">
+		<div class="span10 form-horizontal">
+			<fieldset class="adminform">
+				<?php foreach ($this->form->getFieldset() as $field): ?>
 					<?php echo $field->label; ?>
-				</div>
-				<div class="span11">
 					<?php echo $field->input; ?>
-				</div>
-			</div>
-		<?php endforeach; ?>
-		<input type="hidden" name="task" value="" />
-		<?php echo JHtml::_('form.token'); ?>
+				<?php endforeach; ?>
+			</fieldset>
+		</div>
 	</div>
+	<input type="hidden" name="task" value="" />
+	<?php echo JHtml::_('form.token'); ?>
 </form>
