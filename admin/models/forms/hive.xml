@@ -19,6 +19,12 @@
 				<option value="warre">COM_HIVEMANAGER_WARRE</option>
 			</field>
 			<field
+					name="size"
+					type="text"
+					default=""
+					label="COM_HIVEMANAGER_SIZE_LABEL"
+					description="COM_HIVEMANAGER_SIZE_DESC" />
+			<field
 					name="lat"
 					type="text"
 					default=""
