@@ -11,7 +11,7 @@
 
 jimport('joomla.application.component.modelform');
 
-class HivemanagerModelHive extends JModelForm
+class HivemanagerModelHive extends JModelAdmin
 {
 
 	/**
@@ -64,8 +64,10 @@ class HivemanagerModelHive extends JModelForm
 
 		if (empty($data))
 		{
-			return $data;
+			$data = $this->getItem();
 		}
+
+		return $data;
 	}
 
 	/**
