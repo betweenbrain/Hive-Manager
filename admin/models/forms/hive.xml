@@ -6,11 +6,13 @@
 					name="name"
 					type="text"
 					default=""
+					required="true"
 					label="COM_HIVEMANAGER_NAME_LABEL"
 					description="COM_HIVEMANAGER_NAME_DESC" />
 			<field
 					name="type"
 					type="list"
+					required="true"
 					label="COM_HIVEMANAGER_TYPE_LABEL"
 					description="COM_HIVEMANAGER_TYPE_DESC">
 				<option value="langstroth">COM_HIVEMANAGER_LANGSTROTH</option>
@@ -22,6 +24,7 @@
 					name="size"
 					type="text"
 					default=""
+					required="true"
 					label="COM_HIVEMANAGER_SIZE_LABEL"
 					description="COM_HIVEMANAGER_SIZE_DESC" />
 			<field
@@ -40,6 +43,7 @@
 					name="started"
 					type="calendar"
 					default="NOW"
+					required="true"
 					label="COM_HIVEMANAGER_STARTED_LABEL"
 					description="COM_HIVEMANAGER_STARTED_DESC" />
 		</fieldset>
