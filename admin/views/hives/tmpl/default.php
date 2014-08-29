@@ -15,6 +15,7 @@
 		<table class="table table-striped" id="hives-list">
 			<thead>
 			<tr>
+				<th></th>
 				<th width="1%" class="nowrap center">
 					<?php echo JText::_('COM_HIVEMANAGER_ID'); ?>
 				</th>

@@ -7,13 +7,13 @@
 					type="text"
 					default=""
 					required="true"
-					label="COM_HIVEMANAGER_NAME_LABEL"
+					label="COM_HIVEMANAGER_NAME"
 					description="COM_HIVEMANAGER_NAME_DESC" />
 			<field
 					name="type"
 					type="list"
 					required="true"
-					label="COM_HIVEMANAGER_TYPE_LABEL"
+					label="COM_HIVEMANAGER_TYPE"
 					description="COM_HIVEMANAGER_TYPE_DESC">
 				<option value="langstroth">COM_HIVEMANAGER_LANGSTROTH</option>
 				<option value="nuc">COM_HIVEMANAGER_NUC</option>
@@ -25,26 +25,26 @@
 					type="text"
 					default=""
 					required="true"
-					label="COM_HIVEMANAGER_SIZE_LABEL"
+					label="COM_HIVEMANAGER_SIZE"
 					description="COM_HIVEMANAGER_SIZE_DESC" />
 			<field
 					name="lat"
 					type="text"
 					default=""
-					label="COM_HIVEMANAGER_LAT_LABEL"
+					label="COM_HIVEMANAGER_LAT"
 					description="COM_HIVEMANAGER_LAT_DESC" />
 			<field
 					name="lng"
 					type="text"
 					default=""
-					label="COM_HIVEMANAGER_LNG_LABEL"
+					label="COM_HIVEMANAGER_LNG"
 					description="COM_HIVEMANAGER_LNG_DESC" />
 			<field
 					name="started"
 					type="calendar"
 					default="NOW"
 					required="true"
-					label="COM_HIVEMANAGER_STARTED_LABEL"
+					label="COM_HIVEMANAGER_STARTED"
 					description="COM_HIVEMANAGER_STARTED_DESC" />
 		</fieldset>
 	</fields>
