@@ -23,5 +23,5 @@ class HivemanagerController extends JControllerLegacy
 	 * @var string
 	 * @since 12.2
 	 */
-	protected $default_view = 'Hives';
+	protected $default_view = 'Cpanel';
 }
