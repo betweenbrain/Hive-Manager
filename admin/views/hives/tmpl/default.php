@@ -10,7 +10,7 @@
  */
 ?>
 
-<form action="<?php echo JRoute::_('index.php?option=com_content&view=articles'); ?>" method="post" name="adminForm" id="adminForm">
+<form action="<?php echo JRoute::_('index.php?option=com_hivemanager'); ?>" method="post" name="adminForm" id="adminForm">
 	<div id="j-main-container">
 		<table class="table table-striped" id="hives-list">
 			<thead>
