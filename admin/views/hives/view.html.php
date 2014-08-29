@@ -27,7 +27,7 @@ class HivemanagerViewHives extends JViewLegacy
 	function display($tpl = null)
 	{
 
-		$this->items = $this->get('Items');
+		$this->hives = $this->get('Items');
 
 		parent::display($tpl);
 	}
