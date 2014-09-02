@@ -27,7 +27,9 @@ class HivemanagerViewHives extends JViewLegacy
 	function display($tpl = null)
 	{
 
-		$this->hives = $this->get('Items');
+		$this->hives  = $this->get('Items');
+		$this->userId = JFactory::getUser()->get('id');
+
 		$this->addToolbar();
 
 		parent::display($tpl);
@@ -48,7 +50,7 @@ class HivemanagerViewHives extends JViewLegacy
 
 		JToolbarHelper::addNew('hive.add');
 		JToolbarHelper::editList('hive.edit');
-		JToolbarHelper::deleteList('','hives.delete');
+		JToolbarHelper::deleteList('', 'hives.delete');
 		JToolbarHelper::cancel();
 	}
 }

@@ -42,18 +42,28 @@
 			</tr>
 			</thead>
 			<tbody>
-			<?php foreach ($this->hives as $i => $hive) : ?>
+			<?php foreach ($this->hives as $i => $hive) :
+				$checkedIn = $hive->checked_out == 0 || $hive->checked_out == $this->userId;
+				?>
 				<tr class="row<?php echo $i % 2; ?>">
 					<td class="center">
-						<?php echo JHtml::_('grid.id', $i, $hive->id); ?>
+						<?php if ($checkedIn)
+						{
+							echo JHtml::_('grid.id', $i, $hive->id);
+						}
+						?>
 					</td>
 					<td class="center">
 						<?php echo $hive->id; ?>
 					</td>
 					<td>
+						<?php if ($checkedIn) : ?>
 						<a href="<?php echo JRoute::_('index.php?option=com_hivemanager&task=hive.edit&id=' . $hive->id); ?>">
-							<?php echo $hive->name; ?>
+						<?php endif ?>
+						<?php echo $hive->name; ?>
+						<?php if ($checkedIn) : ?>
 						</a>
+					<?php endif ?>
 					</td>
 					<td>
 						<?php echo $hive->type; ?>
