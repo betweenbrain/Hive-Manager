@@ -51,7 +51,7 @@
 						<?php echo $hive->id; ?>
 					</td>
 					<td>
-						<a href="<?php echo JRoute::_('index.php?option=com_hivemanager&view=hive&layout=edit&id=' . $hive->id); ?>">
+						<a href="<?php echo JRoute::_('index.php?option=com_hivemanager&task=hive.edit&id=' . $hive->id); ?>">
 							<?php echo $hive->name; ?>
 						</a>
 					</td>
