@@ -3,6 +3,10 @@
 	<fields>
 		<fieldset>
 			<field
+					name="id"
+					type="hidden"
+					/>
+			<field
 					name="name"
 					type="text"
 					default=""

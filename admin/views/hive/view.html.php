@@ -28,6 +28,8 @@ class HivemanagerViewHive extends JViewLegacy
 	{
 
 		$this->form = $this->get('Form');
+		$this->item = $this->get('Item');
+
 		$this->addToolbar();
 
 		parent::display($tpl);
@@ -45,9 +47,7 @@ class HivemanagerViewHive extends JViewLegacy
 		JFactory::getApplication()->input->set('hidemainmenu', true);
 
 		JToolbarHelper::title(JText::_('COM_HIVEMANAGER') . ': <em>' . JText::_('COM_HIVEMANAGER_NEW_HIVE') . '</em>');
-
 		JToolbarHelper::save('hive.save');
-
 		JToolbarHelper::cancel('hive.cancel');
 	}
 }

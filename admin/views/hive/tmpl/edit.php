@@ -18,7 +18,7 @@ JHtml::_('behavior.formvalidation');
 		}
 	}
 </script>
-<form action="<?php echo JRoute::_('index.php?option=com_hivemanager'); ?>" method="post" name="adminForm" id="hive-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_hivemanager&layout=edit&id=' . (int) $this->item->id); ?>'); ?>" method="post" name="adminForm" id="hive-form" class="form-validate">
 	<div class="row-fluid">
 		<div class="span10 form-horizontal">
 			<fieldset class="adminform">
