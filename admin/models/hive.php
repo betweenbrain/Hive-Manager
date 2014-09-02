@@ -70,27 +70,4 @@ class HivemanagerModelHive extends JModelAdmin
 		return $data;
 	}
 
-	/**
-	 * Method to save the form data.
-	 *
-	 * @param   array  The form data.
-	 *
-	 * @return  boolean  True on success.
-	 *
-	 * @since    3.0
-	 */
-	public function save($data)
-	{
-		$table = $this->getTable();
-
-		if ($table->save($data) === true)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
 }
